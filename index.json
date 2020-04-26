@@ -32,7 +32,7 @@
 	"title": "Prerequisites",
 	"tags": [],
 	"description": "",
-	"content": "JavaFX was de-coupled from the JDK starting JDK 11 to allow it to move at its own pace. This brought some changes on how we can run JavaFX applications.\nBasically, now we need a few more steps to run a JavaFX application.\nThis section will be a brief introduction to what are the steps one needs to follow in order to get started with a JavaFX application.\n"
+	"content": "JavaFX was de-coupled from the JDK starting JDK 11 to allow it to move at its own pace. This brought some changes on how we can run JavaFX applications.\nBasically, now we need a few more steps to run a JavaFX application.\nThis section will be a brief introduction to steps required to get started with a JavaFX application.\n"
 },
 {
 	"uri": "https://abhinay.xyz/openjfx-docs/runtime-images/jlink/",
