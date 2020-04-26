@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Build Tools for JavaFX on Getting Started with JavaFX</title>
+    <link>/build-tools/</link>
+    <description>Recent content in Build Tools for JavaFX on Getting Started with JavaFX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/build-tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaFX Maven Plugin</title>
+      <link>/build-tools/maven/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/build-tools/maven/</guid>
+      <description>JavaFX Maven Plugin can be added to a Maven project by adding the plugin to its pom.xml file:
+&amp;lt;plugins&amp;gt; &amp;lt;plugin&amp;gt; &amp;lt;groupId&amp;gt;org.openjfx&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;javafx-maven-plugin&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;0.0.4&amp;lt;/version&amp;gt; &amp;lt;configuration&amp;gt; &amp;lt;mainClass&amp;gt;HelloFX&amp;lt;/mainClass&amp;gt; &amp;lt;/configuration&amp;gt; &amp;lt;/plugin&amp;gt; &amp;lt;/plugins&amp;gt; Add the necessary JavaFX dependencies:
+&amp;lt;dependencies&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.openjfx&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;javafx-controls&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;14&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;/dependencies&amp;gt;  A sample project with the above configuration can be found in the samples repository.
+ Once the plugin and necessary dependencies are in place, the application can run via Maven using:</description>
+    </item>
+    
+    <item>
+      <title>JavaFX Gradle Plugin</title>
+      <link>/build-tools/gradle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/build-tools/gradle/</guid>
+      <description>JavaFX Gradle Plugin can be added to a Maven project by adding the plugin to its buidl.gradle file:
+plugins { id &#39;application&#39; id &#39;org.openjfx.javafxplugin&#39; version &#39;0.0.8&#39; }  The &amp;lsquo;application&amp;rsquo; plugin is required to run the JavaFX application using the run task.
+ Unlike the JavaFX Maven plugin, there is no need to explicitly declare the dependencies. The `plugin automatically converts list of modules into dependencies and add them to the module-path.</description>
+    </item>
+    
+  </channel>
+</rss>

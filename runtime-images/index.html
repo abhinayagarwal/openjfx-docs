@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Getting Started with JavaFX :: Getting Started with JavaFX</title>
+    <title>Runtime images for JavaFX :: Getting Started with JavaFX</title>
 
     
     <link href="/css/nucleus.css?1587914070" rel="stylesheet">
@@ -38,7 +38,7 @@
 <link href="/css/tabs.css?1587914070" rel="stylesheet">
 <script src="../../static/js/ga-header.js"></script>
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/runtime-images/">
     <nav id="sidebar" class="">
 
 
@@ -310,8 +310,8 @@
   
     
     <li data-nav-id="/runtime-images/" title="Runtime images for JavaFX" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/runtime-images/">
@@ -437,42 +437,94 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/openjfx/openjfx-docs/edit/develop/content/runtime-images/_index.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/'>Getting Started with JavaFX</a> > Runtime images for JavaFX
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Runtime images for JavaFX
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="getting-started-with-javafx">Getting Started with JavaFX</h1>
-<p>JavaFX allows you to create Java applications with a modern, hardware-accelerated user interface that is highly portable.</p>
 
-<div class="notices note" ><p>This is a short tutorial on how to write a JavaFX application using JDK 11 and later.
-For a more in-depth knowledge on JavaFX and its components please check the <a href="https://docs.oracle.com/javase/8/javase-clienttechnologies.htm">reference documentation for JavaFX</a>.</p>
+	<p>Once we have a JavaFX application running, the next most important part is to distribute the application.</p>
+<p>There are various ways to distribute a Java application. The most common method is to create a JAR file.
+However, since the <a href="https://blogs.oracle.com/java-platform-group/the-future-of-javafx-and-other-java-client-roadmap-updates">de-coupling of JavaFX from JDK</a>
+this method won&rsquo;t work[1] for JavaFX applications.
+Therefore, we need to widen our horizon and look at the newer and modern methods to distribute a Java application.</p>
+
+<div class="notices warning" ><p>This part of the documentation needs knowledge on the <a href="https://cr.openjdk.java.net/~mr/jigsaw/spec/">Java Platform Module System</a> (JPMS).</p>
 </div>
 
-<p>JavaFX builds on top of JDK and is a standalone component. There are 2 different options for developing JavaFX applications:</p>
-<ul>
-<li>Use the <a href="https://gluonhq.com/products/javafx/">JavaFX SDK / JavaFX JMods</a></li>
-<li>Use a build system (e.g. Maven/Gradle)</li>
-</ul>
-<p>For both options, it is required to have a recent version of JDK, or at least JDK 11.</p>
-<h2 id="contribute-to-this-documentation">Contribute to this documentation</h2>
-<p>Feel free to update this content, just click the <strong>Edit this page</strong> link displayed on top right of each page,
-and create a pull request with your changes.</p>
+<p>1 - There are ways around it, and it will be discussed in depth later</p>
 
-<div class="notices note" ><p>Long Term Support (LTS) for JavaFX 11 is available. Please see <a href="https://gluonhq.com/services/javafx-support/">JavaFX Long Term Support</a> options.</p>
-</div>
 
+
+
+
+<footer class=" footline" >
 	
-  
+</footer>
+
         
         </div> 
         
@@ -651,6 +703,7 @@ and create a pull request with your changes.</p>
             
                 
                     
+                    
                 
                 
 
@@ -665,6 +718,9 @@ and create a pull request with your changes.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -707,8 +763,10 @@ and create a pull request with your changes.</p>
 	 
 	 
 		
+			<a class="nav nav-prev" href="/build-tools/gradle/" title="JavaFX Gradle Plugin"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/installation/" title="Installation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/runtime-images/jlink/" title="Runtime images using Jlink" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -738,4 +796,3 @@ and create a pull request with your changes.</p>
 
   </body>
 </html>
-

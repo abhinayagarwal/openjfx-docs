@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Getting Started with JavaFX :: Getting Started with JavaFX</title>
+    <title>JavaFX Gradle Plugin :: Getting Started with JavaFX</title>
 
     
     <link href="/css/nucleus.css?1587914070" rel="stylesheet">
@@ -38,7 +38,7 @@
 <link href="/css/tabs.css?1587914070" rel="stylesheet">
 <script src="../../static/js/ga-header.js"></script>
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/build-tools/gradle/">
     <nav id="sidebar" class="">
 
 
@@ -234,7 +234,7 @@
   
     
     <li data-nav-id="/build-tools/" title="Build Tools for JavaFX" class="dd-item 
-        
+        parent
         
         
         ">
@@ -281,7 +281,7 @@
  
   
     
-      <li data-nav-id="/build-tools/gradle/" title="JavaFX Gradle Plugin" class="dd-item ">
+      <li data-nav-id="/build-tools/gradle/" title="JavaFX Gradle Plugin" class="dd-item active">
         <a href="/build-tools/gradle/">
         JavaFX Gradle Plugin
         
@@ -437,42 +437,141 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/openjfx/openjfx-docs/edit/develop/content/build-tools/gradle.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Getting Started with JavaFX</a> > <a href='/build-tools/'>Build Tools for JavaFX</a> > JavaFX Gradle Plugin
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              JavaFX Gradle Plugin
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="getting-started-with-javafx">Getting Started with JavaFX</h1>
-<p>JavaFX allows you to create Java applications with a modern, hardware-accelerated user interface that is highly portable.</p>
-
-<div class="notices note" ><p>This is a short tutorial on how to write a JavaFX application using JDK 11 and later.
-For a more in-depth knowledge on JavaFX and its components please check the <a href="https://docs.oracle.com/javase/8/javase-clienttechnologies.htm">reference documentation for JavaFX</a>.</p>
+<p>JavaFX Gradle Plugin can be added to a Maven project by adding the plugin to its <code>buidl.gradle</code> file:</p>
+<pre><code>plugins {
+  id 'application'
+  id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+</code></pre>
+<div class="notices note" ><p>The &lsquo;application&rsquo; plugin is required to run the JavaFX application using the run task.</p>
 </div>
 
-<p>JavaFX builds on top of JDK and is a standalone component. There are 2 different options for developing JavaFX applications:</p>
-<ul>
-<li>Use the <a href="https://gluonhq.com/products/javafx/">JavaFX SDK / JavaFX JMods</a></li>
-<li>Use a build system (e.g. Maven/Gradle)</li>
-</ul>
-<p>For both options, it is required to have a recent version of JDK, or at least JDK 11.</p>
-<h2 id="contribute-to-this-documentation">Contribute to this documentation</h2>
-<p>Feel free to update this content, just click the <strong>Edit this page</strong> link displayed on top right of each page,
-and create a pull request with your changes.</p>
-
-<div class="notices note" ><p>Long Term Support (LTS) for JavaFX 11 is available. Please see <a href="https://gluonhq.com/services/javafx-support/">JavaFX Long Term Support</a> options.</p>
+<p>Unlike the JavaFX Maven plugin, there is no need to explicitly declare the dependencies.
+The `plugin automatically converts list of modules into dependencies and add them to the module-path.</p>
+<pre><code>javafx {
+    modules = [ 'javafx.controls' ]
+}
+</code></pre><p>A specific JavaFX version can be declared to be used in the application:</p>
+<pre><code>javafx {
+    version = &quot;11.0.2&quot;
+    modules = [ 'javafx.controls' ]
+}
+</code></pre>
+<div class="notices tip" ><p>A sample project with the above configuration can be found in the <a href="https://github.com/openjfx/samples/blob/master/HelloFX/Gradle/hellofx/">samples repository</a>.</p>
 </div>
 
+<p>Once the plugin and necessary dependencies are in place, the application can run via Gradle using:</p>
+<pre><code>gradle run
+</code></pre>
+<div class="notices tip" ><p>Our recommendation for the minimum Gradle version against each JDK is as follows:</p>
+<table>
+<thead>
+<tr>
+<th align="center">JDK version</th>
+<th align="center">Gradle Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">11</td>
+<td align="center">5.0</td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">5.0</td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td align="center">6.0</td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td align="center">6.3</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+<footer class="footline">
 	
-  
+</footer>
+
         
         </div> 
         
@@ -603,6 +702,7 @@ and create a pull request with your changes.</p>
             
                 
                     
+                    
                 
                 
 
@@ -615,6 +715,9 @@ and create a pull request with your changes.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -632,6 +735,7 @@ and create a pull request with your changes.</p>
             
                 
                     
+                    
                 
                 
 
@@ -650,6 +754,9 @@ and create a pull request with your changes.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -707,8 +814,10 @@ and create a pull request with your changes.</p>
 	 
 	 
 		
+			<a class="nav nav-prev" href="/build-tools/maven/" title="JavaFX Maven Plugin"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/installation/" title="Installation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/runtime-images/" title="Runtime images for JavaFX" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
