@@ -71,7 +71,7 @@
 },
 {
 	"uri": "https://abhinay.xyz/openjfx-docs/runtime-images/",
-	"title": "Runtime images for JavaFX",
+	"title": "Runtime Images",
 	"tags": [],
 	"description": "",
 	"content": "Once we have a JavaFX application running, the next most important part is to distribute the application.\nThere are various ways to distribute a Java application. The most common method is to create a JAR file. However, since the de-coupling of JavaFX from JDK this method won\u0026rsquo;t work[1] for JavaFX applications. Therefore, we need to widen our horizon and look at the newer and modern methods to distribute a Java application.\nThis part of the documentation needs knowledge on the Java Platform Module System (JPMS).\n 1 - There are ways around it, and it will be discussed in depth later\n"
