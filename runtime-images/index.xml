@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Runtime images for JavaFX on Getting Started with JavaFX</title>
-    <link>/runtime-images/</link>
+    <link>https://abhinay.xyz/openjfx-docs/runtime-images/</link>
     <description>Recent content in Runtime images for JavaFX on Getting Started with JavaFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	<atom:link href="/runtime-images/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://abhinay.xyz/openjfx-docs/runtime-images/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

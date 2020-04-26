@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Getting Started with JavaFX</title>
-    <link>/</link>
+    <link>https://abhinay.xyz/openjfx-docs/</link>
     <description>Recent content on Getting Started with JavaFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://abhinay.xyz/openjfx-docs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello JavaFX</title>
-      <link>/getting-started/hello-javafx/</link>
+      <link>https://abhinay.xyz/openjfx-docs/getting-started/hello-javafx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/getting-started/hello-javafx/</guid>
+      <guid>https://abhinay.xyz/openjfx-docs/getting-started/hello-javafx/</guid>
       <description>In this part, we are going to create a simple JavaFX application, compile it and run it. Let&amp;rsquo;s get started!
  Create a HelloFX.java file the following code:  import javafx.application.Application; import javafx.scene.Scene; import javafx.scene.control.Label; import javafx.scene.layout.StackPane; import javafx.stage.Stage; public class HelloFX extends Application { @Override public void start(Stage stage) { Label l = new Label(&amp;#34;Hello JavaFX!&amp;#34;); Scene scene = new Scene(new StackPane(l), 640, 480); stage.setScene(scene); stage.show(); } } This file contains a basic JavaFX application which shows a Label.</description>
     </item>
     
     <item>
       <title>Hello JavaFX on Classpath</title>
-      <link>/getting-started/hello-javafx-classpath/</link>
+      <link>https://abhinay.xyz/openjfx-docs/getting-started/hello-javafx-classpath/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/getting-started/hello-javafx-classpath/</guid>
+      <guid>https://abhinay.xyz/openjfx-docs/getting-started/hello-javafx-classpath/</guid>
       <description>It is still possible to run a JavaFX application by using the classpath instead of module-path. There are 2 changes that we need to make to our previous sample to achive it:
  Add a static method run() in HelloFX which will call Application.launch method Add a Launcher.java file with a main method to call HelloFX.run method   Add a static method run() in HelloFX:  import javafx.application.Application; import javafx.</description>
     </item>
     
     <item>
       <title>Install Java</title>
-      <link>/installation/java/</link>
+      <link>https://abhinay.xyz/openjfx-docs/installation/java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/installation/java/</guid>
+      <guid>https://abhinay.xyz/openjfx-docs/installation/java/</guid>
       <description>Download an appropriate JDK for your operating system. The latest JDK can be downloaded from the official OpenJDK website.
 Once installed, use the java -version command from the command line to check the Java version.
 Output for OpenJDK 12:
@@ -44,10 +44,10 @@ $ java -version openjdk version &amp;quot;12.0.2&amp;quot; 2019-07-16 OpenJDK Ru
     
     <item>
       <title>JavaFX Maven Plugin</title>
-      <link>/build-tools/maven/</link>
+      <link>https://abhinay.xyz/openjfx-docs/build-tools/maven/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/build-tools/maven/</guid>
+      <guid>https://abhinay.xyz/openjfx-docs/build-tools/maven/</guid>
       <description>JavaFX Maven Plugin can be added to a Maven project by adding the plugin to its pom.xml file:
 &amp;lt;plugins&amp;gt; &amp;lt;plugin&amp;gt; &amp;lt;groupId&amp;gt;org.openjfx&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;javafx-maven-plugin&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;0.0.4&amp;lt;/version&amp;gt; &amp;lt;configuration&amp;gt; &amp;lt;mainClass&amp;gt;HelloFX&amp;lt;/mainClass&amp;gt; &amp;lt;/configuration&amp;gt; &amp;lt;/plugin&amp;gt; &amp;lt;/plugins&amp;gt; Add the necessary JavaFX dependencies:
 &amp;lt;dependencies&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.openjfx&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;javafx-controls&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;14&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;/dependencies&amp;gt;  A sample project with the above configuration can be found in the samples repository.
@@ -56,10 +56,10 @@ $ java -version openjdk version &amp;quot;12.0.2&amp;quot; 2019-07-16 OpenJDK Ru
     
     <item>
       <title>Install JavaFX</title>
-      <link>/installation/javafx/</link>
+      <link>https://abhinay.xyz/openjfx-docs/installation/javafx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/installation/javafx/</guid>
+      <guid>https://abhinay.xyz/openjfx-docs/installation/javafx/</guid>
       <description>JavaFX can also be used via Maven/Gradle. This step can be skipped in case you want to use it via these build tools.
  JavaFX can be used by downloading an appropriate JavaFX runtime. These are available in 2 flavors:
  JavaFX SDK JavaFX JMods  For most development tasks, JavaFX SDK is more than enough. JavaFX JMods are only required when you want to create a runtime image of your application.</description>
@@ -67,10 +67,10 @@ $ java -version openjdk version &amp;quot;12.0.2&amp;quot; 2019-07-16 OpenJDK Ru
     
     <item>
       <title>JavaFX Gradle Plugin</title>
-      <link>/build-tools/gradle/</link>
+      <link>https://abhinay.xyz/openjfx-docs/build-tools/gradle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/build-tools/gradle/</guid>
+      <guid>https://abhinay.xyz/openjfx-docs/build-tools/gradle/</guid>
       <description>JavaFX Gradle Plugin can be added to a Maven project by adding the plugin to its buidl.gradle file:
 plugins { id &#39;application&#39; id &#39;org.openjfx.javafxplugin&#39; version &#39;0.0.8&#39; }  The &amp;lsquo;application&amp;rsquo; plugin is required to run the JavaFX application using the run task.
  Unlike the JavaFX Maven plugin, there is no need to explicitly declare the dependencies. The `plugin automatically converts list of modules into dependencies and add them to the module-path.</description>

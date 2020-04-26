@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Getting Started on Getting Started with JavaFX</title>
-    <link>/getting-started/</link>
+    <link>https://abhinay.xyz/openjfx-docs/getting-started/</link>
     <description>Recent content in Getting Started on Getting Started with JavaFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	<atom:link href="/getting-started/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://abhinay.xyz/openjfx-docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello JavaFX</title>
-      <link>/getting-started/hello-javafx/</link>
+      <link>https://abhinay.xyz/openjfx-docs/getting-started/hello-javafx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/getting-started/hello-javafx/</guid>
+      <guid>https://abhinay.xyz/openjfx-docs/getting-started/hello-javafx/</guid>
       <description>In this part, we are going to create a simple JavaFX application, compile it and run it. Let&amp;rsquo;s get started!
  Create a HelloFX.java file the following code:  import javafx.application.Application; import javafx.scene.Scene; import javafx.scene.control.Label; import javafx.scene.layout.StackPane; import javafx.stage.Stage; public class HelloFX extends Application { @Override public void start(Stage stage) { Label l = new Label(&amp;#34;Hello JavaFX!&amp;#34;); Scene scene = new Scene(new StackPane(l), 640, 480); stage.setScene(scene); stage.show(); } } This file contains a basic JavaFX application which shows a Label.</description>
     </item>
     
     <item>
       <title>Hello JavaFX on Classpath</title>
-      <link>/getting-started/hello-javafx-classpath/</link>
+      <link>https://abhinay.xyz/openjfx-docs/getting-started/hello-javafx-classpath/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/getting-started/hello-javafx-classpath/</guid>
+      <guid>https://abhinay.xyz/openjfx-docs/getting-started/hello-javafx-classpath/</guid>
       <description>It is still possible to run a JavaFX application by using the classpath instead of module-path. There are 2 changes that we need to make to our previous sample to achive it:
  Add a static method run() in HelloFX which will call Application.launch method Add a Launcher.java file with a main method to call HelloFX.run method   Add a static method run() in HelloFX:  import javafx.application.Application; import javafx.</description>
     </item>
