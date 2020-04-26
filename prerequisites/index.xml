@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Installation on Getting Started with JavaFX</title>
-    <link>https://abhinay.xyz/openjfx-docs/installation/</link>
-    <description>Recent content in Installation on Getting Started with JavaFX</description>
+    <title>Prerequisites on Getting Started with JavaFX</title>
+    <link>https://abhinay.xyz/openjfx-docs/prerequisites/</link>
+    <description>Recent content in Prerequisites on Getting Started with JavaFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	<atom:link href="https://abhinay.xyz/openjfx-docs/installation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://abhinay.xyz/openjfx-docs/prerequisites/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Install Java</title>
-      <link>https://abhinay.xyz/openjfx-docs/installation/java/</link>
+      <link>https://abhinay.xyz/openjfx-docs/prerequisites/java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://abhinay.xyz/openjfx-docs/installation/java/</guid>
+      <guid>https://abhinay.xyz/openjfx-docs/prerequisites/java/</guid>
       <description>Download an appropriate JDK for your operating system. The latest JDK can be downloaded from the official OpenJDK website.
 Once installed, use the java -version command from the command line to check the Java version.
 Output for OpenJDK 12:
@@ -24,10 +24,10 @@ $ java -version openjdk version &amp;quot;12.0.2&amp;quot; 2019-07-16 OpenJDK Ru
     
     <item>
       <title>Install JavaFX</title>
-      <link>https://abhinay.xyz/openjfx-docs/installation/javafx/</link>
+      <link>https://abhinay.xyz/openjfx-docs/prerequisites/javafx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://abhinay.xyz/openjfx-docs/installation/javafx/</guid>
+      <guid>https://abhinay.xyz/openjfx-docs/prerequisites/javafx/</guid>
       <description>JavaFX can also be used via Maven/Gradle. This step can be skipped in case you want to use it via these build tools.
  JavaFX can be used by downloading an appropriate JavaFX runtime. These are available in 2 flavors:
  JavaFX SDK JavaFX JMods  For most development tasks, JavaFX SDK is more than enough. JavaFX JMods are only required when you want to create a runtime image of your application.</description>

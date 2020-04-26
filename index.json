@@ -14,18 +14,11 @@
 	"content": "It is still possible to run a JavaFX application by using the classpath instead of module-path. There are 2 changes that we need to make to our previous sample to achive it:\n Add a static method run() in HelloFX which will call Application.launch method Add a Launcher.java file with a main method to call HelloFX.run method   Add a static method run() in HelloFX:  import javafx.application.Application; import javafx.scene.Scene; import javafx.scene.control.Label; import javafx.scene.layout.StackPane; import javafx.stage.Stage; public class HelloFX extends Application { @Override public void start(Stage stage) { Label l = new Label(\u0026#34;Hello JavaFX!\u0026#34;); Scene scene = new Scene(new StackPane(l), 640, 480); stage.setScene(scene); stage.show(); } public static void run(String[] args) { launch(); } } Add a Launcher.java file with a main method to call HelloFX.run method:  public class Launcher { public static void main(String[] args) { HelloFX.run(args); } } Compile both these file using classpath:  Linux/Mac Windows  javac -classpath \\ $PATH_TO_FX/javafx.base.jar:$PATH_TO_FX/javafx.graphics.jar:$PATH_TO_FX/javafx.controls.jar:\\ HelloFX.java Launcher.java   javac --module-path %PATH_TO_FX% --add-modules javafx.controls HelloFX.java     Add any additional jars used by the application. For example, if it is using FXML functionality, add the javafx.fxml module:\nLinux/Mac Windows  java -classpath \\ $PATH_TO_FX/javafx.base.jar:$PATH_TO_FX/javafx.graphics.jar:$PATH_TO_FX/javafx.controls.jar:$PATH_TO_FX/javafx.fxml.jar\\ Launcher   javac --module-path %PATH_TO_FX% --add-modules javafx.controls,javafx.fxml HelloFX.java     Run the application:  Linux/Mac Windows  java --module-path $PATH_TO_FX --add-modules javafx.controls HelloFX   java --module-path %PATH_TO_FX% --add-modules javafx.controls HelloFX     Checkout the OpenJFX samples repository for more samples.\n "
 },
 {
-	"uri": "https://abhinay.xyz/openjfx-docs/installation/java/",
+	"uri": "https://abhinay.xyz/openjfx-docs/prerequisites/java/",
 	"title": "Install Java",
 	"tags": [],
 	"description": "",
 	"content": "Download an appropriate JDK for your operating system. The latest JDK can be downloaded from the official OpenJDK website.\nOnce installed, use the java -version command from the command line to check the Java version.\nOutput for OpenJDK 12:\n$ java -version openjdk version \u0026quot;12.0.2\u0026quot; 2019-07-16 OpenJDK Runtime Environment (build 12.0.2+10) OpenJDK 64-Bit Server VM (build 12.0.2+10, mixed mode, sharing) Set the JAVA_HOME environment variable to the JDK installation directory. Follow this guide to set JAVA_HOME for your platform.\nIf your system has multiple versions of JDK installed, make sure the JAVA_HOME environment variable points to correct JDK. JavaFX 11needs at least JDK 11.\n "
-},
-{
-	"uri": "https://abhinay.xyz/openjfx-docs/installation/",
-	"title": "Installation",
-	"tags": [],
-	"description": "",
-	"content": "JavaFX was de-coupled from the JDK starting JDK 11 to allow it to move at its own pace. This brought some changes on how we can run JavaFX applications.\nBasically, now we need a few more steps to run a JavaFX application.\nThis section will be a brief introduction to what are the steps one needs to follow in order to get started with a JavaFX application.\n"
 },
 {
 	"uri": "https://abhinay.xyz/openjfx-docs/build-tools/maven/",
@@ -33,6 +26,13 @@
 	"tags": [],
 	"description": "",
 	"content": "JavaFX Maven Plugin can be added to a Maven project by adding the plugin to its pom.xml file:\n\u0026lt;plugins\u0026gt; \u0026lt;plugin\u0026gt; \u0026lt;groupId\u0026gt;org.openjfx\u0026lt;/groupId\u0026gt; \u0026lt;artifactId\u0026gt;javafx-maven-plugin\u0026lt;/artifactId\u0026gt; \u0026lt;version\u0026gt;0.0.4\u0026lt;/version\u0026gt; \u0026lt;configuration\u0026gt; \u0026lt;mainClass\u0026gt;HelloFX\u0026lt;/mainClass\u0026gt; \u0026lt;/configuration\u0026gt; \u0026lt;/plugin\u0026gt; \u0026lt;/plugins\u0026gt; Add the necessary JavaFX dependencies:\n\u0026lt;dependencies\u0026gt; \u0026lt;dependency\u0026gt; \u0026lt;groupId\u0026gt;org.openjfx\u0026lt;/groupId\u0026gt; \u0026lt;artifactId\u0026gt;javafx-controls\u0026lt;/artifactId\u0026gt; \u0026lt;version\u0026gt;14\u0026lt;/version\u0026gt; \u0026lt;/dependency\u0026gt; \u0026lt;/dependencies\u0026gt;  A sample project with the above configuration can be found in the samples repository.\n Once the plugin and necessary dependencies are in place, the application can run via Maven using:\nmvn javafx:run  Make sure to set the JAVA_HOME environment variable to correct JDK location.\n "
+},
+{
+	"uri": "https://abhinay.xyz/openjfx-docs/prerequisites/",
+	"title": "Prerequisites",
+	"tags": [],
+	"description": "",
+	"content": "JavaFX was de-coupled from the JDK starting JDK 11 to allow it to move at its own pace. This brought some changes on how we can run JavaFX applications.\nBasically, now we need a few more steps to run a JavaFX application.\nThis section will be a brief introduction to what are the steps one needs to follow in order to get started with a JavaFX application.\n"
 },
 {
 	"uri": "https://abhinay.xyz/openjfx-docs/runtime-images/jlink/",
@@ -49,7 +49,7 @@
 	"content": "In this part, we are going to create a simple JavaFX application, compile it and run it. Let\u0026rsquo;s get started!\nCheckout the OpenJFX samples repository for more samples.\n "
 },
 {
-	"uri": "https://abhinay.xyz/openjfx-docs/installation/javafx/",
+	"uri": "https://abhinay.xyz/openjfx-docs/prerequisites/javafx/",
 	"title": "Install JavaFX",
 	"tags": [],
 	"description": "",

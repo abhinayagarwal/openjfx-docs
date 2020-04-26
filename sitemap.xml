@@ -11,15 +11,15 @@
   </url>
   
   <url>
-    <loc>https://abhinay.xyz/openjfx-docs/installation/java/</loc>
-  </url>
-  
-  <url>
-    <loc>https://abhinay.xyz/openjfx-docs/installation/</loc>
+    <loc>https://abhinay.xyz/openjfx-docs/prerequisites/java/</loc>
   </url>
   
   <url>
     <loc>https://abhinay.xyz/openjfx-docs/build-tools/maven/</loc>
+  </url>
+  
+  <url>
+    <loc>https://abhinay.xyz/openjfx-docs/prerequisites/</loc>
   </url>
   
   <url>
@@ -31,7 +31,7 @@
   </url>
   
   <url>
-    <loc>https://abhinay.xyz/openjfx-docs/installation/javafx/</loc>
+    <loc>https://abhinay.xyz/openjfx-docs/prerequisites/javafx/</loc>
   </url>
   
   <url>
