@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://abhinay.xyz/openjfx-docs/getting-started/hello-javafx/</guid>
-      <description>In this part, we are going to create a simple JavaFX application, compile it and run it. Let&amp;rsquo;s get started!
+      <description>Let us create a simple JavaFX application. compile it and run it.
  Create a HelloFX.java file the following code:  import javafx.application.Application; import javafx.scene.Scene; import javafx.scene.control.Label; import javafx.scene.layout.StackPane; import javafx.stage.Stage; public class HelloFX extends Application { @Override public void start(Stage stage) { Label l = new Label(&amp;#34;Hello JavaFX!&amp;#34;); Scene scene = new Scene(new StackPane(l), 640, 480); stage.setScene(scene); stage.show(); } } This file contains a basic JavaFX application which shows a Label.</description>
     </item>
     
@@ -60,8 +60,8 @@ $ java -version openjdk version &amp;quot;12.0.2&amp;quot; 2019-07-16 OpenJDK Ru
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://abhinay.xyz/openjfx-docs/prerequisites/javafx/</guid>
-      <description>JavaFX can also be used via Maven/Gradle. This step can be skipped in case you want to use it via these build tools.
- JavaFX can be used by downloading an appropriate JavaFX runtime. These are available in 2 flavors:
+      <description>JavaFX can also be used via Maven/Gradle without installing the JavaFX SDK. You can skip directly to the build tools section if you want to use JavaFX with these build tools.
+ JavaFX can be used by downloading an appropriate JavaFX development kit. These are available in 2 flavors:
  JavaFX SDK JavaFX JMods  For most development tasks, JavaFX SDK is more than enough. JavaFX JMods are only required when you want to create a runtime image of your application.</description>
     </item>
     

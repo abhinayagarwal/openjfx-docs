@@ -4,7 +4,7 @@
 	"title": "Hello JavaFX",
 	"tags": [],
 	"description": "",
-	"content": "In this part, we are going to create a simple JavaFX application, compile it and run it. Let\u0026rsquo;s get started!\n Create a HelloFX.java file the following code:  import javafx.application.Application; import javafx.scene.Scene; import javafx.scene.control.Label; import javafx.scene.layout.StackPane; import javafx.stage.Stage; public class HelloFX extends Application { @Override public void start(Stage stage) { Label l = new Label(\u0026#34;Hello JavaFX!\u0026#34;); Scene scene = new Scene(new StackPane(l), 640, 480); stage.setScene(scene); stage.show(); } } This file contains a basic JavaFX application which shows a Label.\nCompile the Java file:  Linux/Mac Windows  javac --module-path $PATH_TO_FX --add-modules javafx.controls HelloFX.java   javac --module-path %PATH_TO_FX% --add-modules javafx.controls HelloFX.java     Add any additional modules used by the application. For example, if it is using FXML functionality, add the javafx.fxml module:\nLinux/Mac Windows  javac --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml HelloFX.java   javac --module-path %PATH_TO_FX% --add-modules javafx.controls,javafx.fxml HelloFX.java      Transitive modules are automatically resolved. For instance, there is no need to add javafx.graphics module, since it is transitively required by the javafx.controls module.\n More information about modules and module-path is available at Java Platform Module System specification.\n Run the application:  Linux/Mac Windows  java --module-path $PATH_TO_FX --add-modules javafx.controls HelloFX   java --module-path %PATH_TO_FX% --add-modules javafx.controls HelloFX     Checkout the OpenJFX samples repository for more samples.\n "
+	"content": "Let us create a simple JavaFX application. compile it and run it.\n Create a HelloFX.java file the following code:  import javafx.application.Application; import javafx.scene.Scene; import javafx.scene.control.Label; import javafx.scene.layout.StackPane; import javafx.stage.Stage; public class HelloFX extends Application { @Override public void start(Stage stage) { Label l = new Label(\u0026#34;Hello JavaFX!\u0026#34;); Scene scene = new Scene(new StackPane(l), 640, 480); stage.setScene(scene); stage.show(); } } This file contains a basic JavaFX application which shows a Label.\nCompile the Java file:  Linux/Mac Windows  javac --module-path $PATH_TO_FX --add-modules javafx.controls HelloFX.java   javac --module-path %PATH_TO_FX% --add-modules javafx.controls HelloFX.java     Add any additional modules used by the application. For example, if it is using FXML functionality, add the javafx.fxml module:\nLinux/Mac Windows  javac --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml HelloFX.java   javac --module-path %PATH_TO_FX% --add-modules javafx.controls,javafx.fxml HelloFX.java      Transitive modules are automatically resolved. For instance, there is no need to add javafx.graphics module, since it is transitively required by the javafx.controls module.\n More information about modules and module-path is available at Java Platform Module System specification.\n Run the application:  Linux/Mac Windows  java --module-path $PATH_TO_FX --add-modules javafx.controls HelloFX   java --module-path %PATH_TO_FX% --add-modules javafx.controls HelloFX     Checkout the OpenJFX samples repository for more samples.\n "
 },
 {
 	"uri": "https://abhinay.xyz/openjfx-docs/getting-started/hello-javafx-classpath/",
@@ -32,7 +32,7 @@
 	"title": "Prerequisites",
 	"tags": [],
 	"description": "",
-	"content": "JavaFX was de-coupled from the JDK starting JDK 11 to allow it to move at its own pace. This brought some changes on how we can run JavaFX applications.\nBasically, now we need a few more steps to run a JavaFX application.\nThis section will be a brief introduction to steps required to get started with a JavaFX application.\n"
+	"content": "JavaFX was de-coupled from the JDK starting JDK 11 to allow it to move at its own pace. This brought some changes on how we can run JavaFX applications.\nThis section will be a brief introduction to the prerequisites for running a JavaFX application.\n"
 },
 {
 	"uri": "https://abhinay.xyz/openjfx-docs/runtime-images/jlink/",
@@ -46,14 +46,14 @@
 	"title": "Getting Started",
 	"tags": [],
 	"description": "",
-	"content": "In this part, we are going to create a simple JavaFX application, compile it and run it. Let\u0026rsquo;s get started!\nCheckout the OpenJFX samples repository for more samples.\n "
+	"content": "In this part, we are going to create a simple JavaFX application. We will then try to compile it and run it using JDK and JavaFX SDK. Let\u0026rsquo;s get started!\nCheckout the OpenJFX samples repository for more samples.\n "
 },
 {
 	"uri": "https://abhinay.xyz/openjfx-docs/prerequisites/javafx/",
 	"title": "Install JavaFX",
 	"tags": [],
 	"description": "",
-	"content": " JavaFX can also be used via Maven/Gradle. This step can be skipped in case you want to use it via these build tools.\n JavaFX can be used by downloading an appropriate JavaFX runtime. These are available in 2 flavors:\n JavaFX SDK JavaFX JMods  For most development tasks, JavaFX SDK is more than enough. JavaFX JMods are only required when you want to create a runtime image of your application.\n Once downloaded and unzipped, we recommend setting an environment variable to this directory path to make it easier to use:\nLinux/Mac Windows  export PATH_TO_FX=path/to/javafx-sdk-14/lib   set PATH_TO_FX=\u0026quot;path\\to\\javafx-sdk-14\\lib\u0026quot;     "
+	"content": " JavaFX can also be used via Maven/Gradle without installing the JavaFX SDK. You can skip directly to the build tools section if you want to use JavaFX with these build tools.\n JavaFX can be used by downloading an appropriate JavaFX development kit. These are available in 2 flavors:\n JavaFX SDK JavaFX JMods  For most development tasks, JavaFX SDK is more than enough. JavaFX JMods are only required when you want to create a runtime image of your application.\n Once downloaded and unzipped, we recommend setting an environment variable to this directory path to make it easier to use:\nLinux/Mac Windows  export PATH_TO_FX=path/to/javafx-sdk-14/lib   set PATH_TO_FX=\u0026quot;path\\to\\javafx-sdk-14\\lib\u0026quot;     "
 },
 {
 	"uri": "https://abhinay.xyz/openjfx-docs/build-tools/gradle/",
@@ -67,7 +67,7 @@
 	"title": "Build Tools for JavaFX",
 	"tags": [],
 	"description": "",
-	"content": "JavaFX community has created the following plugins for Maven and Gradle to help create and maintain a JavaFX application:\n JavaFX Maven Plugin JavaFX Gradle Plugin  These plugins are designed to make JavaFX fun by taking away all the boilerplate and wiring, required to run a JavaFX application. There is no need to download the JavaFX SDK or add the JavaFX modules to the module-path.\nThis section will be a brief introduction to these plugins.\n"
+	"content": "JavaFX community has created the following plugins for Maven and Gradle. These plugins make it easier to create, test and maintain a JavaFX application.\n JavaFX Maven Plugin JavaFX Gradle Plugin  These plugins are designed to make JavaFX fun by taking away all the ritual required to run a JavaFX application. There is no need to download the JavaFX SDK or add the JavaFX modules to the module-path. Everything is taken care by the plugin!\nThis section will be a brief introduction to these plugins.\n"
 },
 {
 	"uri": "https://abhinay.xyz/openjfx-docs/runtime-images/",
@@ -95,7 +95,7 @@
 	"title": "Getting Started with JavaFX",
 	"tags": [],
 	"description": "",
-	"content": "Getting Started with JavaFX JavaFX allows you to create Java applications with a modern, hardware-accelerated user interface that is highly portable.\nThis is a short tutorial on how to write a JavaFX application using JDK 11 and later. For a more in-depth knowledge on JavaFX and its components please check the reference documentation for JavaFX.\n JavaFX builds on top of JDK and is a standalone component. There are 2 different options for developing JavaFX applications:\n Use the JavaFX SDK / JavaFX JMods Use a build system (e.g. Maven/Gradle)  For both options, it is required to have a recent version of JDK, or at least JDK 11.\nContribute to this documentation Feel free to update this content, just click the Edit this page link displayed on top right of each page, and create a pull request with your changes.\nLong Term Support (LTS) for JavaFX 11 is available. Please see JavaFX Long Term Support options.\n "
+	"content": "Getting Started with JavaFX JavaFX allows you to create Java applications with a modern, hardware-accelerated user interface that is highly portable.\nThis is a short tutorial on how to write a JavaFX application using JDK 11 and later. In case you are new to JavaFX, we recommend going through JavaFX reference documentation It contains detailed information on JavaFX architecture, layouts, controls, style sheets, FXML, and visual effects.\n A JavaFX application will build on top of JDK. There are 2 different options for developing JavaFX applications:\n Use the JavaFX SDK / JavaFX JMods Use a build system (e.g. Maven/Gradle)  For both options, it is required to have a recent version of JDK, or at least JDK 11. More information is available about it in the next section.\nContribute to this documentation Feel free to update this content, just click the Edit this page link displayed on top right of each page, and create a pull request with your changes.\nLong Term Support (LTS) for JavaFX 11 is available. Please see JavaFX Long Term Support options.\n "
 },
 {
 	"uri": "https://abhinay.xyz/openjfx-docs/tags/",

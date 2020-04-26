@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://abhinay.xyz/openjfx-docs/getting-started/hello-javafx/</guid>
-      <description>In this part, we are going to create a simple JavaFX application, compile it and run it. Let&amp;rsquo;s get started!
+      <description>Let us create a simple JavaFX application. compile it and run it.
  Create a HelloFX.java file the following code:  import javafx.application.Application; import javafx.scene.Scene; import javafx.scene.control.Label; import javafx.scene.layout.StackPane; import javafx.stage.Stage; public class HelloFX extends Application { @Override public void start(Stage stage) { Label l = new Label(&amp;#34;Hello JavaFX!&amp;#34;); Scene scene = new Scene(new StackPane(l), 640, 480); stage.setScene(scene); stage.show(); } } This file contains a basic JavaFX application which shows a Label.</description>
     </item>
     
