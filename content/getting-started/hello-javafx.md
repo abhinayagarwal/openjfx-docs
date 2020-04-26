@@ -3,7 +3,7 @@ title: Hello JavaFX
 weight: 10
 ---
 
-In this part, we are going to create a simple JavaFX application, compile it and run it. Let's get started!
+Let us create a simple JavaFX application.  compile it and run it.
 
 1. Create a `HelloFX.java` file the following code:
 

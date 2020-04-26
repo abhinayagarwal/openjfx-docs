@@ -4,7 +4,7 @@ weight: 10
 ---
 
 Download an appropriate JDK for your operating system.
-The latest JDK can be downloaded from the official [OpenJDK](http://jdk.java.net/11/) website.
+The latest JDK can be downloaded from the official [OpenJDK](http://jdk.java.net/{{< param JDK_VERSION >}}/) website.
 
 Once installed, use the `java -version` command from the command line to check the Java version.
 

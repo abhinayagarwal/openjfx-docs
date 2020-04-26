@@ -4,10 +4,11 @@ weight: 20
 ---
 
 {{% notice note %}}
-JavaFX can also be used via Maven/Gradle. This step can be skipped in case you want to use it via these [build tools](/build-tools/).
+JavaFX can also be used via Maven/Gradle without installing the JavaFX SDK.
+You can skip directly to the [build tools](/openjfx-docs/build-tools) section if you want to use JavaFX with these build tools.
 {{% /notice %}}
 
-JavaFX can be used by downloading an appropriate [JavaFX runtime](https://gluonhq.com/products/javafx/).
+JavaFX can be used by downloading an appropriate [JavaFX development kit](https://gluonhq.com/products/javafx/).
 These are available in 2 flavors:
 
 1. JavaFX SDK

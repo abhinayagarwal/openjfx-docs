@@ -1,5 +1,5 @@
 ---
-title: Runtime images for JavaFX
+title: Runtime Images
 weight: 40
 ---
 
