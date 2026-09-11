@@ -1,35 +1,35 @@
 $(function() {
     // constants
-    var MIN_JDK = "24";
+    var MIN_JDK = "25";
     var MIN_JDK_LTS = "21";
-    var JDK_MAJOR = "24";
-    var JFX_MAJOR = "26";
-    
-    var JFX_VERSION = "26.0.2";
-    var JFX_LTS_VERSION = "17 or 21";
+    var JDK_MAJOR = "25";
+    var JFX_MAJOR = "27";
+
+    var JFX_VERSION = "27";
+    var JFX_LTS_VERSION = "17 or 21 or 25";
     var JFX_PLUGIN_VERSION = "0.1.0";
     var JFX_MVN_PLUGIN_VERSION = "0.0.8";
     var JFX_MVN_ARCH_VERSION = "0.0.6";
     var JLINK_PLUGIN_VERSION = "3.1.1";
 
     var nav_top = 70;
-        
+
     // Hide all non-active div
     $('.hidden').hide();
-    
+
     // Navigate to anchor if the url has hash
     var anchorHash = window.location.hash;
     if (anchorHash.length > 1) {
         loadContent($('a[href="' + anchorHash + '"]'));
     }
-    
+
     // Make sure correct anchor links are loaded when url changes
     $(window).bind('hashchange', function () {
         var hash = window.location.hash.slice(1);
         loadContent($('a[href="#' + hash + '"]'));
         scrollTo(0, 0);
     });
-    
+
     // Click on anchor links should load content
     $('a[href^="#"]').on('click', function() {
         // TODO: Has performance issues
@@ -48,7 +48,7 @@ $(function() {
         }
         loadContent(this);
     });
-    
+
     // open group, close rest of groups
     $(".list-group-item .ref-group").click(function(e) {
         e.preventDefault();
@@ -62,7 +62,7 @@ $(function() {
             $('ul.list-group-sub').slideUp();
         }
     });
-    
+
     // Add href to report a problem buttons
     /*$('a[data-section]').each(function() {
         var emailWithSubject = "https://gluonhq.com/about-us/contact-us/?comment=" + 
@@ -84,20 +84,20 @@ $(function() {
             $(this).tab('show');
         });
     });
-    
+
     $(document).on('click', '.modular-jlink-action', function(event) {
         event.preventDefault(); 
         var anchor = $('.jlink');
         $('html,body').scrollTop($(anchor).offset().top);
     });
-    
+
     // Scroll to anchor from list-group-sub links
     $(document).on('click', ".scrollto", function(event) {
         event.preventDefault(); 
         var anchor = $(this).attr('data-scroll');
         $('html,body').scrollTop($(anchor).offset().top - nav_top);
     });
-    
+
     // Scroll to anchor from navbar-nav links
     $(document).on('click', 'a[class*="nav-link"][data-toggle="collapse"]', function(event) {
         event.preventDefault(); 
@@ -109,7 +109,7 @@ $(function() {
             $('html,body').scrollTop($(href).offset().top - nav_top);
         }
     });
-    
+
     // Replace all constants
     // sticky sidenav
     $(document).ready(function() {
@@ -181,7 +181,7 @@ $(function() {
             }
         }
     }
-    
+
     function replaceAll(str, find, replace) {
         return str.split(find).join(replace);
     }
